@@ -217,7 +217,7 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
         wavfile.write("sample.wav", sampling_rate, wav)
 
     # Define the path where you want to save the waveform
-    output_path = "/content/drive/MyDrive/Speech/TTS/result/Arabicv3/sample.wav"  
+    output_path = "/content/Arabicv3/sample.wav"  
 
     # Save the waveform file
     for wav, basename in zip(wav_predictions, basenames):
@@ -227,7 +227,7 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
     mel_predictions_np = mel_predictions.cpu().numpy()  # Ensure it's a NumPy array
 
     # Save mel spectrogram
-    np.save("/content/drive/MyDrive/Speech/TTS/result/Arabicv3/mel_spectrogram.npy", mel_predictions_np)    
+    np.save("/content/Arabicv3/mel_spectrogram.npy", mel_predictions_np)    
     print ("save..............")
     import librosa.display
     import matplotlib.pyplot as plt
@@ -245,7 +245,7 @@ def synth_samples(targets, predictions, vocoder, model_config, preprocess_config
     plt.tight_layout()
 
     # Save the plot
-    plot_path = "/content/drive/MyDrive/Speech/TTS/result/Arabicv3/mel_spectrogram.png"
+    plot_path = "/content/Arabicv3/mel_spectrogram.png"
     plt.savefig(plot_path, dpi=300)
     plt.show()
 
