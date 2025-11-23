@@ -1,5 +1,5 @@
 path:
-  ckpt_path: "/content/drive/MyDrive/Speech/TTS/ckpt/Arabicv3"
+  ckpt_path: "/content/Arabicv3"
   log_path: "/content/drive/MyDrive/Speech/TTS/log/Arabicv3"
   result_path: "/content/drive/MyDrive/Speech/TTS/result/Arabicv3"
 optimizer:

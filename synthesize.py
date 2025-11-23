@@ -1,7 +1,7 @@
 import re
 import argparse
 from string import punctuation
-from arabic_pronounce import phonetise
+from arabic_pronounce.arabic_pronounce import phonetise
 from lang_trans.arabic import buckwalter
 import torch
 import yaml
